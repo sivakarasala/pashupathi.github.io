@@ -1,25 +1,54 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+
+import CardList from "./components/CardList";
 
 class App extends Component {
+  state = {};
+  componentDidMount() {
+    let requestBody = {
+      query: `query {
+        viewer {
+          name
+          location
+           repositories(last:10) {
+             nodes {
+               name
+              id
+              url
+             }
+           }
+         }
+      }`
+    };
+    fetch("https://api.github.com/graphql", {
+      method: "POST",
+      body: JSON.stringify(requestBody),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer 3b1cd049662945ecb46ea8c020e75b42cd111c9d"
+      }
+    })
+      .then(res => {
+        if (res.status !== 200 && res.status !== 201) {
+          throw new Error("Failed!");
+        }
+        return res.json();
+      })
+      .then(resData => {
+        this.setState({
+          gitHub: resData.data.viewer.repositories.nodes
+        });
+      })
+      .catch(err => {
+        throw err;
+      });
+  }
+
   render() {
+    console.log(this.state.gitHub);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        {this.state !== {} ? <CardList repos={this.state.gitHub} /> : ""}
       </div>
     );
   }
