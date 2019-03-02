@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.66129355.chunk.css",
-  "main.js": "/static/js/main.5d5c994b.chunk.js",
-  "main.js.map": "/static/js/main.5d5c994b.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
-  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
-  "static/js/2.4cca7d6a.chunk.js": "/static/js/2.4cca7d6a.chunk.js",
-  "static/js/2.4cca7d6a.chunk.js.map": "/static/js/2.4cca7d6a.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.04d2dcaae0ba7084578005393aac90c9.js": "/precache-manifest.04d2dcaae0ba7084578005393aac90c9.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.66129355.chunk.css.map": "/static/css/main.66129355.chunk.css.map"
+  "main.css": "/pashupathi.github.io/static/css/main.66129355.chunk.css",
+  "main.js": "/pashupathi.github.io/static/js/main.f864aac9.chunk.js",
+  "main.js.map": "/pashupathi.github.io/static/js/main.f864aac9.chunk.js.map",
+  "runtime~main.js": "/pashupathi.github.io/static/js/runtime~main.abf1eaa0.js",
+  "runtime~main.js.map": "/pashupathi.github.io/static/js/runtime~main.abf1eaa0.js.map",
+  "static/js/2.2566fee3.chunk.js": "/pashupathi.github.io/static/js/2.2566fee3.chunk.js",
+  "static/js/2.2566fee3.chunk.js.map": "/pashupathi.github.io/static/js/2.2566fee3.chunk.js.map",
+  "index.html": "/pashupathi.github.io/index.html",
+  "precache-manifest.92c4a8f326109de28b1d2da795336bd5.js": "/pashupathi.github.io/precache-manifest.92c4a8f326109de28b1d2da795336bd5.js",
+  "service-worker.js": "/pashupathi.github.io/service-worker.js",
+  "static/css/main.66129355.chunk.css.map": "/pashupathi.github.io/static/css/main.66129355.chunk.css.map"
 }
